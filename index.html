@@ -7,7 +7,7 @@
 	<a-scene embedded arjs='sourceType: webcam;'>
 		<a-marker preset='hiro'>
 			<a-text value="CVMB" rotation="-90 0 0" color="red"></a-text>
-      <a-entity gltf-model="url(ntu/ntu.gltf)"  scale="0.5 0.5 0.5" position="1 -0.5 0" rotation="-90 0 0" ></a-entity>
+      <a-entity gltf-model="url(ntu/ntu.gltf)"  scale="0.5 0.5 0.5" position="1 -0.5 0" rotation="-90 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 7000"></a-entity>
 		</a-marker>
     <a-entity camera></a-entity>
 	</a-scene>
