@@ -10,12 +10,17 @@
   </head>
   <body>
     <a-scene embedded arjs>
-      <a-marker-camera preset='hiro'>
-        <a-text 
-          value="Hello, World!"
-          rotation="-90 0 0"
-          color="red"></a-text>
-      </a-marker-camera>
+        <a-marker-camera preset='hiro'>
+            <a-text 
+                value="Hello, World!"
+                rotation="-90 0 0"
+                color="red"></a-text>
+            </a-marker-camera>
+
+        <a-marker-camera type='pattern' url='pattern-marker.patt'>
+            <a-entity position='0 0 0' gltf-model="scene.gltf"></a-entity>
+        </a-marker-camera>
+
     </a-scene>
   </body>
   </html>
