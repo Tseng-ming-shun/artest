@@ -3,7 +3,7 @@
   <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
  
-<body>
+  <body style="margin: 0px; overflow: hidden;">
 	<a-scene embedded arjs='sourceType: webcam;'>
 		<a-marker preset='hiro'>
 			<a-text value="CVMB" rotation="-90 0 0" color="red"></a-text>
@@ -11,8 +11,7 @@
 		</a-marker>
 
 		<a-marker type='pattern' url='CCB/CCB_pattern.patt'>
-			<a-text value="CCB" rotation="-90 0 0" position="-2 -2 0" color="red"></a-text>
-			<a-text value="CCB" rotation="-90 0 0" position="-2 -3 0" color="red"></a-text>
+			<a-text value="CCB\nCCB" rotation="-90 0 0" position="-2 -2 0" color="red"></a-text>
       		<a-entity gltf-model="url(CCB/CCB.gltf)"  scale="0.1 0.1 0.1" position="0 0 0" rotation="-90 0 0"  >
 			</a-entity>
 		</a-marker>
